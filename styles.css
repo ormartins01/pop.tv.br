@@ -78,7 +78,6 @@ main {
 video {
   width: 960px;
   height: auto;
-  border-radius: 12px;
   border: 1px solid #e2e2e2;
   aspect-ratio: 16/9;
 }
@@ -96,7 +95,6 @@ footer {
   video {
     width: 320px;
     height: auto;
-    border-radius: 8px;
     border: 1px solid #e2e2e2;
     aspect-ratio: 16/9;
   }
@@ -119,7 +117,6 @@ footer {
   video {
     width: 320px;
     height: auto;
-    border-radius: 8px;
     border: 1px solid #e2e2e2;
     aspect-ratio: 16/9;
   }
