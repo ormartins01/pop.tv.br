@@ -91,16 +91,25 @@ footer {
   font-size: large;
 }
 
+@media (max-width: 1360px) {
+  video {
+    width: 720px;
+    height: auto;
+    border: 1px solid #e2e2e2;
+    aspect-ratio: 16/9;
+  }
+}
+
 @media (max-width: 960px) {
   video {
-    width: 320px;
+    width: 540px;
     height: auto;
     border: 1px solid #e2e2e2;
     aspect-ratio: 16/9;
   }
 
   #logo-header {
-    width: 100px; /* Reduza mais o tamanho do logo para telas menores */
+    width: 100px;
   }
 
   #aovivo {
@@ -111,7 +120,29 @@ footer {
 
 @media (max-width: 768px) {
   #logo-header {
-    width: 100px; /* Reduza mais o tamanho do logo para telas menores */
+    width: 100px;
+  }
+
+  video {
+    width: 480px;
+    height: auto;
+    border: 1px solid #e2e2e2;
+    aspect-ratio: 16/9;
+  }
+
+  nav {
+    font-size: large;
+  }
+
+  #aovivo {
+    font-size: large;
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 520px) {
+  #logo-header {
+    width: 100px;
   }
 
   video {
@@ -122,7 +153,7 @@ footer {
   }
 
   nav {
-    font-size: large;
+    font-size: medium;
   }
 
   #aovivo {
