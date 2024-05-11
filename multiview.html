@@ -10,7 +10,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
     <link rel="manifest" href="./assets/favicon/site.webmanifest">
     <link rel="mask-icon" href="./assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <title>POP TV</title>
+    <title>Pop Tv - Multiview</title>
     <link
     rel="stylesheet"
     href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
@@ -50,8 +50,36 @@
       </header>
       <main>
         <div class="main-container">
-          <h1 id="multiview-title">Home - em contrução!</h1>
-
+          <div class="video-container">
+            <h1 id="multiview-title">Multiview</h1>
+            <div id="multiview-container">
+              <div class="video-container">
+                <div class="div-title-video-container">
+                <h2 class="multiview-video-title">Pop Tv Sobradinho -</h2>
+                <h2 id="aovivo" class="multiview-video-title">Ao Vivo</h2>
+              </div>
+                <video
+                id="video-so"
+                class="embed-responsive-item video-js vjs-default-skin multiview-video"
+                poster="./assets/slide-pop.png"
+                controls
+                autoplay="true"
+                ></video>
+              </div>
+              <div class="video-container">
+                <div class="div-title-video-container">
+                  <h2 class="multiview-video-title">Pop Tv Porto Alegre -</h2>
+                  <h2 id="aovivo" class="multiview-video-title">Ao Vivo</h2>
+                </div>
+                <video
+                id="video-pa"
+                class="embed-responsive-item video-js vjs-default-skin multiview-video"
+                poster="./assets/slide-pop.png"
+                controls
+                autoplay="true"
+                ></video>
+              </div>
+            </div>
         </div>
       </main>
       <footer className="div w-full bg-secondary py-6 px-5 text-center">
