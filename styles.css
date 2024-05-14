@@ -1,3 +1,9 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -7,7 +13,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background-color: #252525;
+  background-color: #008cff;
 }
 
 header {
@@ -39,12 +45,13 @@ main {
   width: 100%;
   height: 100%;
   text-align: center;
-  background: url("./assets/slide-pop.png") fixed no-repeat;
+  background: url("./assets/slide-pop.png") no-repeat center center fixed;
   -webkit-background-size: cover;
   -o-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   margin: 0;
+  flex: 1;
   display: flex;
   justify-content: center;
 }
@@ -90,6 +97,7 @@ h2 {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  gap: 20px;
 }
 
 .div-title-video-container {
@@ -131,10 +139,11 @@ h2 {
   align-items: center;
 }
 
-video {
+iframe {
   width: 960px;
   height: auto;
   border: 1px solid #e2e2e2;
+  border-radius: 8px;
   aspect-ratio: 16/9;
 }
 
@@ -147,17 +156,44 @@ footer {
   font-size: large;
 }
 
+@media (max-width: 1920px) {
+  iframe {
+    width: 960px;
+    height: auto;
+    border: 1px solid #e2e2e2;
+    aspect-ratio: 16/9;
+  }
+
+  #multiview-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  footer {
+    font-size: medium;
+    margin-top: 380px;
+  }
+}
+
 @media (max-width: 1360px) {
-  video {
+  iframe {
     width: 720px;
     height: auto;
     border: 1px solid #e2e2e2;
     aspect-ratio: 16/9;
   }
+
+  footer {
+    font-size: medium;
+    margin-top: 280px;
+  }
 }
 
 @media (max-width: 960px) {
-  video {
+  iframe {
     width: 540px;
     height: auto;
     border: 1px solid #e2e2e2;
@@ -183,7 +219,11 @@ footer {
     width: 100px;
   }
 
-  video {
+  .main-container {
+    margin-top: 280px;
+  }
+
+  iframe {
     width: 480px;
     height: auto;
     border: 1px solid #e2e2e2;
@@ -207,7 +247,7 @@ footer {
     width: 100px;
   }
 
-  video {
+  iframe {
     width: 320px;
     height: auto;
     border: 1px solid #e2e2e2;
