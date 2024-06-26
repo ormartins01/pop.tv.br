@@ -28,26 +28,6 @@
     <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
   </head>
   <body>
-    <header>
-      <nav class="navbar navbar-inverse">
-        <div class="container">
-          <div class="navbar-header">
-            <a href="index.html" class="navbar-brand">
-              <figure>
-                <img id="logo-header" src="./assets/logo-pop.png" alt="Logo Pop Tv" />
-              </figure>
-            </a>
-          </div>
-          <ul class="nav navbar-nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="multiview.html">Multiview</a></li>
-            <li><a href="sobradinho.html">Sobradinho</a></li>
-            <li><a href="porto-alegre.html">Porto Alegre</a></li>
-            <li><a href="about-us.html">Sobre nós</a></li>
-            <li><a href="contact.html">Contato</a></li>
-          </ul>
-        </div>
-      </header>
       <main>
         <div class="main-container">
           <div class="video-container">
@@ -59,7 +39,7 @@
                 <h2 id="aovivo" class="multiview-video-title">Ao Vivo</h2>
               </div>
               <iframe
-              src="http://localhost:8081/players/rti-player.html"
+              src="http://localhost:8086/players/rti-player.html"
               width="100%" 
               style="aspect-ratio: 16/9; min-height: 340px;" 
               frameborder="1" 
@@ -78,7 +58,7 @@
                   <h2 id="aovivo" class="multiview-video-title">Ao Vivo</h2>
                 </div>
                 <iframe
-                src="http://localhost:8081/players/rti-player.html"
+                src="http://localhost:8086/players/rti-player.html"
                 width="100%" 
                 style="aspect-ratio: 16/9; min-height: 340px;" 
                 frameborder="1" 
@@ -94,10 +74,6 @@
             </div>
         </div>
       </main>
-      <footer className="div w-full bg-secondary py-6 px-5 text-center">
-        <span className="text-gray-400 text-xs">©Copyrigth 2024 Pop Tv</span>
-      </footer>
-      
       <script src="script.js"></script>
     </body>
     </html>

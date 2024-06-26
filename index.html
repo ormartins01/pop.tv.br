@@ -39,19 +39,36 @@
             </a>
           </div>
           <ul class="nav navbar-nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="multiview.html">Multiview</a></li>
-            <li><a href="sobradinho.html">Sobradinho</a></li>
-            <li><a href="porto-alegre.html">Porto Alegre</a></li>
-            <li><a href="about-us.html">Sobre nós</a></li>
-            <li><a href="contact.html">Contato</a></li>
+            <li><a href="#">Home</a></li>
+            <!-- <li><a href="multiview.html">Multiview</a></li> -->
+            <!-- <li><a href="sobradinho.html">Sobradinho</a></li> -->
+            <!-- <li><a href="porto-alegre.html">Porto Alegre</a></li> -->
+            <li><a href="#">Sobre nós</a></li>
+            <li><a href="#">Contato</a></li>
           </ul>
         </div>
       </header>
       <main>
         <div class="main-container">
-          <h1 id="multiview-title">Home - em contrução!</h1>
-
+          <div class="video-container">
+            <div class="div-title-video-container">
+              <h2 id="aovivo" class="multiview-video-title">Ao Vivo</h2>
+            </div>
+            <iframe
+            src="http://localhost:8086/players/rti-player.html"
+            width="100%" 
+            style="aspect-ratio: 16/9; min-height: 340px;" 
+            frameborder="1" 
+            scrolling="no" 
+            oncanplay="this.play()"
+            allowfullscreen  
+            webkitallowfullscreen 
+            mozallowfullscreen 
+            oallowfullscreen 
+            msallowfullscreen
+            >
+          </iframe>
+          </div>
         </div>
       </main>
       <footer className="div w-full bg-secondary py-6 px-5 text-center">

@@ -102,6 +102,9 @@ h2 {
 
 .div-title-video-container {
   display: flex;
+  width: 100%;
+  font-weight: 800;
+  align-items: start;
   gap: 8px;
 }
 
