@@ -3,25 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="./assets/favicon/site.webmanifest">
-    <link rel="mask-icon" href="./assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <title>POP TV</title>
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
     <link
-    rel="stylesheet"
-    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-    crossorigin="anonymous"
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/favicon/apple-touch-icon.png"
     />
     <link
-    rel="stylesheet"
-    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
-    integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
-    crossorigin="anonymous"
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="./assets/favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <title>POP TV</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+      integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+      crossorigin="anonymous"
     />
     <link rel="stylesheet" href="styles.css" />
 
@@ -34,48 +52,48 @@
           <div class="navbar-header">
             <a href="index.html" class="navbar-brand">
               <figure>
-                <img id="logo-header" src="./assets/logo-pop.png" alt="Logo Pop Tv" />
+                <img
+                  id="logo-header"
+                  src="./assets/logo-pop.png"
+                  alt="Logo Pop Tv"
+                />
               </figure>
             </a>
           </div>
           <ul class="nav navbar-nav">
             <li><a href="#">Home</a></li>
-            <!-- <li><a href="multiview.html">Multiview</a></li> -->
-            <!-- <li><a href="sobradinho.html">Sobradinho</a></li> -->
-            <!-- <li><a href="porto-alegre.html">Porto Alegre</a></li> -->
             <li><a href="#">Sobre nós</a></li>
             <li><a href="#">Contato</a></li>
           </ul>
         </div>
-      </header>
-      <main>
-        <div class="main-container">
-          <div class="video-container">
-            <div class="div-title-video-container">
-              <h2 id="aovivo" class="multiview-video-title">Ao Vivo</h2>
-            </div>
-            <iframe
-            src="http://localhost:8086/players/rti-player.html"
-            width="100%" 
-            style="aspect-ratio: 16/9; min-height: 340px;" 
-            frameborder="1" 
-            scrolling="no" 
-            oncanplay="this.play()"
-            allowfullscreen  
-            webkitallowfullscreen 
-            mozallowfullscreen 
-            oallowfullscreen 
-            msallowfullscreen
-            >
-          </iframe>
+      </nav>
+    </header>
+    <main>
+      <div class="main-container">
+        <div class="video-container">
+          <div class="div-title-video-container">
+            <h2 id="aovivo" class="multiview-video-title">Ao Vivo</h2>
           </div>
+          <iframe
+            src="http://srv26513565.ultasrv.com:8080/players/rti-player.html"
+            width="100%"
+            style="aspect-ratio: 16/9"
+            frameborder="1"
+            scrolling="no"
+            oncanplay="this.play()"
+            allowfullscreen
+            webkitallowfullscreen
+            mozallowfullscreen
+            oallowfullscreen
+            msallowfullscreen
+            allow-scripts
+          >
+          </iframe>
         </div>
-      </main>
-      <footer className="div w-full bg-secondary py-6 px-5 text-center">
-        <span className="text-gray-400 text-xs">©Copyrigth 2024 Pop Tv</span>
-      </footer>
-      
-      <script src="script.js"></script>
-    </body>
-    </html>
-    
+      </div>
+    </main>
+    <footer className="div w-full bg-secondary py-6 px-5 text-center">
+      <span className="text-gray-400 text-xs">©Copyrigth 2024 Pop Tv</span>
+    </footer>
+  </body>
+</html>
