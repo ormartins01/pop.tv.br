@@ -28,6 +28,26 @@
     <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
   </head>
   <body>
+    <header>
+      <nav class="navbar navbar-inverse">
+        <div class="container">
+          <div class="navbar-header">
+            <a href="index.html" class="navbar-brand">
+              <figure>
+                <img
+                  id="logo-header"
+                  src="./assets/logo-pop.png"
+                  alt="Logo Pop Tv"
+                />
+              </figure>
+            </a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
       <main>
         <div class="main-container">
           <div class="video-container">
@@ -39,7 +59,7 @@
                 <h2 id="aovivo" class="multiview-video-title">Ao Vivo</h2>
               </div>
               <iframe
-              src="http://localhost:8081/players/rti-player-so.html"
+              src="http://srv26513565.ultasrv.com:8080/players/rti-player.html"
               width="100%" 
               style="aspect-ratio: 16/9; min-height: 340px;" 
               frameborder="1" 
@@ -59,7 +79,7 @@
                   <h2 id="aovivo" class="multiview-video-title">Ao Vivo</h2>
                 </div>
                 <iframe
-                src="http://localhost:8082/players/rti-player-pa.html"
+                src="http://srv26513565.ultasrv.com:8086/players/rti-player.html"
                 width="100%" 
                 style="aspect-ratio: 16/9; min-height: 340px;" 
                 frameborder="1" 
