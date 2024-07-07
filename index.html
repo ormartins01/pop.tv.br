@@ -3,7 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta
+      name="description"
+      content="A Pop TV é uma canal de tv aberta de Sobradinho-RS pelo canal 45.1 e que também está em Poto Alegre-RS pelo canal 23.1 mas que também pode ser assitida neste site e nos aplicativos para Android e iOS."
+      <meta
+      name="msapplication-TileColor"
+      content="#da532c"
+    />
     <meta name="theme-color" content="#ffffff" />
     <link
       rel="apple-touch-icon"
@@ -29,71 +35,256 @@
       color="#5bbad5"
     />
     <title>POP TV</title>
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
-      integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="styles.css" />
+
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: url("./assets/slide-pop.png") no-repeat center fixed;
+        background-size: cover;
+      }
+
+      header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 132px;
+        background-color: #111827;
+      }
+
+      #logo-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 132px;
+        height: 132px;
+      }
+
+      header h1 {
+        color: white;
+      }
+
+      nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      nav a {
+        color: rgb(214, 214, 214);
+        text-decoration: none;
+        margin: 0 0.5rem;
+      }
+
+      ul {
+        margin-left: -60px;
+        list-style: none;
+        display: flex;
+      }
+
+      main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        padding: 1rem;
+      }
+
+      .video-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 80px;
+        width: 80%;
+        height: 80%;
+      }
+
+      .video-container h2 {
+        color: rgb(255, 66, 66);
+        font-size: 1.2rem;
+        margin-bottom: 0.1rem;
+      }
+
+      .video-container iframe {
+        width: 70%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+        border-radius: 8px;
+      }
+
+      .video-container video {
+        width: 100%;
+        height: 100%;
+      }
+
+      footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        color: rgb(214, 214, 214);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        padding: 1rem;
+        background-color: #111827;
+      }
+
+      footer span {
+        width: 90%;
+        font-size: 1rem;
+        text-align: center;
+      }
+
+      /* Estilos para celulares (até 767px) */
+      @media (max-width: 464px) {
+        .video-container h2 {
+          font-size: 1.2rem;
+        }
+        .video-container iframe {
+          width: 100%;
+        }
+
+        footer span {
+          width: 90%;
+          font-size: 0.6rem;
+        }
+      }
+
+      /* Estilos para celulares (até 767px) */
+      @media (max-width: 767px) {
+        nav {
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+
+        ul {
+          margin-top: 0px;
+          font-size: small;
+        }
+
+        #logo-header {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 80px;
+          height: 80px;
+        }
+
+        .video-container iframe {
+          width: 100%;
+        }
+
+        footer {
+          font-size: 0.6rem;
+        }
+      }
+
+      /* Estilos para telas de tablets (768px e acima) */
+      @media (min-width: 768px) {
+        .video-container iframe {
+          width: 100%;
+        }
+
+        footer {
+          font-size: 0.4rem;
+        }
+      }
+
+      /* Estilos para telas de desktop pequenas (1024px e acima) */
+      @media (min-width: 1024px) {
+        .video-container iframe {
+          width: 90%;
+        }
+
+        footer {
+          font-size: 0.4rem;
+        }
+      }
+
+      /* Estilos para telas de desktop grandes (1200px e acima) */
+      @media (min-width: 1200px) {
+        .video-container iframe {
+          width: 90%;
+        }
+        footer {
+          font-size: 0.6rem;
+        }
+      }
+
+      /* Estilos para telas de desktop grandes (1200px e acima) */
+      @media (min-width: 1420px) {
+        .video-container iframe {
+          width: 75%;
+        }
+        footer {
+          font-size: 0.6rem;
+        }
+      }
+    </style>
 
     <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-inverse">
-        <div class="container">
-          <div class="navbar-header">
-            <a href="index.html" class="navbar-brand">
-              <figure>
-                <img
-                  id="logo-header"
-                  src="./assets/logo-pop.png"
-                  alt="Logo Pop Tv"
-                />
-              </figure>
-            </a>
-          </div>
-          <ul class="nav navbar-nav">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Sobre nós</a></li>
-            <li><a href="#">Contato</a></li>
-          </ul>
-        </div>
+      <nav>
+        <a href="index.html">
+          <figure>
+            <img
+              id="logo-header"
+              src="./assets/icon2-pop.png"
+              alt="Logo Pop Tv"
+            />
+          </figure>
+        </a>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Sobre nós</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
       </nav>
     </header>
     <main>
-      <div class="main-container">
-        <div class="video-container">
-          <div class="div-title-video-container">
-            <h2 id="aovivo" class="multiview-video-title">Ao Vivo</h2>
-          </div>
-          <iframe
-            src="./players/poptv.html"
-            width="100%"
-            style="aspect-ratio: 16/9"
-            frameborder="1"
-            scrolling="no"
-            oncanplay="this.play()"
-            allowfullscreen
-            webkitallowfullscreen
-            mozallowfullscreen
-            oallowfullscreen
-            msallowfullscreen
-            allow-scripts
-          >
-          </iframe>
-        </div>
+      <div class="video-container">
+        <h2 id="aovivo">Ao Vivo</h2>
+        <iframe
+          src="https://pop.tv.br/players/poptv.html"
+          frameborder="1"
+          scrolling="no"
+          oncanplay="this.play()"
+          allowfullscreen
+          webkitallowfullscreen
+          mozallowfullscreen
+          oallowfullscreen
+          msallowfullscreen
+          allow-scripts
+        ></iframe>
       </div>
     </main>
-    <footer className="div w-full bg-secondary py-6 px-5 text-center">
-      <span className="text-gray-400 text-xs">©Copyrigth 2024 Pop Tv</span>
+    <footer>
+      <span> © 2024 Pop TV. Todos os direitos reservados. </span>
     </footer>
   </body>
 </html>
