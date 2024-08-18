@@ -183,10 +183,11 @@ footer span {
   .links-conatiner {
     width: 300px;
     margin-top: 50px;
+    gap: 1rem;
   }
 
   .link-app img {
-    width: 120px;
+    width: 180px;
   }
 
   footer span {
@@ -220,14 +221,14 @@ footer span {
   .video-container iframe {
     width: 80%;
   }
-
   .links-conatiner {
-    width: 480px;
-    margin-top: 40px;
+    width: 300px;
+    margin-top: 50px;
+    gap: 1rem;
   }
 
   .link-app img {
-    width: 220px;
+    width: 180px;
   }
 
   footer span {
@@ -303,18 +304,33 @@ footer span {
     margin-bottom: -80px;
   }
 
+  #link-apple {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  #link-google {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
   .links-conatiner {
     width: 360px;
-    height: 120px;
+    height: 60px;
     flex-direction: column;
     justify-content: flex-start;
     gap: 1rem;
-
+    padding: 20px;
   }
 
   .link-app img {
     width: 180px;
-    margin-top: 100px;
   }
 
   footer span {
@@ -362,9 +378,25 @@ footer span {
 
   }
 
+  #link-apple {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  #link-google {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+
   .link-app img {
     width: 120px;
-    margin-top: 100px;
   }
 
   footer span {
