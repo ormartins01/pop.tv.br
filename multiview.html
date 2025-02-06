@@ -126,7 +126,17 @@
         height: 100%;
       }
 
-      .video-container {
+      .video-container-a {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 80px;
+        width: 960px;
+        height: 80%;
+      }
+
+      .video-container-b {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -406,10 +416,10 @@
     </header>
     <main>
       <div class="multiview-container">
-        <div class="video-container">
+        <div class="video-container-a">
           <h1 class="title-multiview">Ao Vivo - Sobradinho</h1>
           <iframe
-            src="https://pop.tv.br/players/poptv.html"
+            src="https://rtisoluctions.com.br/players/poptv-so.html"
             frameborder="1"
             scrolling="no"
             oncanplay="this.play()"
@@ -421,10 +431,10 @@
             allow-scripts
           ></iframe>
         </div>
-        <div class="video-container">
+        <div class="video-container-b">
           <h1 class="title-multiview">Ao Vivo - Porto Alegre</h1>
           <iframe
-            src="https://pop.tv.br/players/poptv-pa.html"
+            src="https://rtisoluctions.com.br/players/poptv-pa.html"
             frameborder="1"
             scrolling="no"
             oncanplay="this.play()"

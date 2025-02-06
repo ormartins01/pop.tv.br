@@ -71,7 +71,7 @@
       if (Hls.isSupported()) {
         var video = document.getElementById("video");
         var hls = new Hls();
-        hls.loadSource("http://85.209.92.197:8086/hls/test.m3u8");
+        hls.loadSource("http://rtisoluctions.com.br:8086/hlspa/test.m3u8");
         hls.attachMedia(video);
         hls.on(Hls.Events.MANIFEST_PARSED, function () {
           video.play();
